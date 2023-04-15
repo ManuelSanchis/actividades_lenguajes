@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Exocet Hard';
+    src: url(./fonts/films.EXH_____.ttf);
+}
+
+@font-face {
+    font-family: 'Exocet Light';
+    src: url(./fonts/films.EXL_____.ttf);
+}
+
+
+* {
+    outline: 1px solid red;
+}
+
+
+html {
+font-family: 'Exocet Light';
+}
+
+body {
+    margin: 0; /*Reset a los márgenes por defecto de los navegadores*/
+    background-color: black;
+}
+
+#contenedor {
+    background-color: grey;
+    color: rgb(210, 210, 210);
+}
+
+header {
+    background-color: black;
+    color: rgb(218, 172, 100);
+}
+
+header h1 {
+    font-family:'Exocet Hard';
+    font-size: 80px;
+    text-align: center;
+}
+
+.borde {
+    margin: 3px;
+    padding: 2px;
+    border: 3px solid rgb(218, 172, 100);
+    border-radius: 2px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.imgLista {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+footer section {
+    float: right;
+}
+
+nav a, aside a, footer a {
+    transition: color;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+/*
+a:link {
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+}
+
+a:visited {
+     color: rgb(210, 210, 210);
+ }
+*/
+
+a:hover {
+    color: rgb(218, 172, 100);
+    text-decoration: underline; 
+}
+
