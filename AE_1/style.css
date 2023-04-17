@@ -60,6 +60,12 @@ nav {
 margin-bottom: 10px;
 }
 
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
 li {
     display: flex;
     flex-direction: row;
@@ -110,7 +116,13 @@ aside h3 {
     float: right;
 }
 
-nav a, section a, aside a, footer a {
+#cr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+nav a, aside a, footer a {
     transition: color;
     color: rgb(210, 210, 210);
     text-decoration: none;
