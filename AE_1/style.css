@@ -31,7 +31,7 @@ body {
     color: rgb(210, 210, 210);
 }
 
-header {
+header, aside h3 {
     background-color: black;
     color: rgb(218, 172, 100);
 }
@@ -66,6 +66,39 @@ li {
     list-style: none;
 }
 
+section {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+section p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/*
+section footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+*/
+
+#barraLateral {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 .imgLista {
     margin: 2px;
     width: 20px;
@@ -77,7 +110,7 @@ li {
     float: right;
 }
 
-nav a, aside a, footer a {
+nav a, section a, aside a, footer a {
     transition: color;
     color: rgb(210, 210, 210);
     text-decoration: none;
