@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,26 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<form action="mailto:nuestromail@nuestraempresa.com" method="POST" enctype="text/plain">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+<body>
 
-    <br>
+    <div class="contenedor">
+        <form action="mailto:josem.juangracia@gmail.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
+            <br>
 
-    <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="asunto">Asunto:</label>
-    <input type="text" id="asunto" name="asunto" required>
+            <br>
 
-    <br>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <br>
 
-    <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <input type="submit" value="Enviar">
-</form>
+            <br>
+
+            <input type="submit" value="Enviar">
+
+            <h2>Selecciona un servicio:</h2>
+            <input type="radio" id="tutorizacion" name="servicio" value="tutorizacion">
+            <label for="tutorizacion">Tutorización dentro del juego</label><br>
+
+            <input type="radio" id="mejora_habilidades" name="servicio" value="mejora_habilidades">
+            <label for="mejora_habilidades">Mejora de habilidades en juego online</label><br>
+
+            <input type="radio" id="acompanamiento" name="servicio" value="acompanamiento">
+            <label for="acompanamiento">Acompañamiento en el modo campaña para todos los niveles</label><br>
+
+            <input type="radio" id="otros" name="servicio" value="otros">
+            <label for="otros">Otros:</label>
+            <input type="text" id="otros_texto" name="otros_texto" placeholder="Escribe aquí"><br>
+        </form>
+    </div>
+</body>
+
+</html>
