@@ -1,82 +1,115 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AE-1</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AE-1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <head>
   <meta charset="UTF-8">
   <title>Formulario de contacto</title>
-
-  <!-- Enlace al documento css. no aplicable en codepen.
-  <link rel="stylesheet" type="text/css" href="contact-form.css">
--->
-  
-  </head>
+</head>
 
 
-<body>  
-  
-  <!-- formulario de contacto en html y css -->  
-
+<body>
   <div class="contact_form">
 
-    <div class="formulario">      
+
+    <div id="contenedor">
       <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
-          <form action="submeter-formulario.php" method="post">       
+      <form action="mailto:adrian.martinezm97@gmial.com" method="POST" enctype="text/plain">
+        <h3>Selecciona un servicio:</h3>
+        <input type="checkbox" id="tutorizacion" name="servicio" value="tutorizacion">
+        <label for="tutorizacion">Tutorización dentro del juego</label><br>
+        <input type="checkbox" id="mejora_habilidades" name="servicio" value="mejora_habilidades">
+        <label for="mejora_habilidades">Mejora de habilidades en juego online</label><br>
+        <input type="checkbox" id="acompanamiento" name="servicio" value="acompanamiento">
+        <label for="acompanamiento">Acompañamiento en el modo campaña para todos los niveles</label><br>
+        <input type="checkbox" id="otros" name="servicio" value="otros">
+        <label for="otros">Otros:</label>
+        <input type="text" id="otros_texto" name="otros_texto" placeholder="Escribe aquí"><br>
+        <p>
+        <h3>Indique su nivel de experiencia:</h3>
+        <input type="range" name="rango" min="0" max="" list="lista-rango">
+        <datalist id="lista-rango">
+          <option value="1" label="Principiante">
+          <option value="2" label="Regular">
+          <option value="3" label="Bueno">
+          <option value="4" label="Leyenda">
+        </datalist>
 
-            <p>
-                <label for="nombre" class="colocar_nombre">Nombre
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-              </p>
-            
-              <p>
-                <label for="email" class="colocar_email">Email
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-              </p>
-          
-              <p>
-                <label for="telefone" class="colocar_telefono">Teléfono
-                </label>
-                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-              </p>    
-            
-              <p>
-                <label for="website" class="colocar_website">Sitio web
-                </label>
-                  <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-              </p>    
-            
-              <p>
-                <label for="asunto" class="colocar_asunto">Asunto
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-              </p>    
-            
-              <p>
-                <label for="mensaje" class="colocar_mensaje">Mensaje
-                  <span class="obligatorio">*</span>
-                </label>                     
-                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                              </p>                    
-            
-              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        <h3>Indique su color favorito:</h3>
+        <input type="color" name="colorElegido">
 
-              <p class="aviso">
-                <span class="obligatorio"> * </span>los campos son obligatorios.
-              </p>          
-          
-        </form>
-  </div>  
-</div>
+        <h3>Indícanos tus datos</h3>
+        <label for="nombre" class="colocar_nombre">Nombre
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+        </p>
+
+        <p>
+          <label for="email" class="colocar_email">Email
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+        </p>
+
+        <p>
+          <label for="telefone" class="colocar_telefono">Teléfono
+          </label>
+          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+        </p>
+
+        <p>
+          <label for="website" class="colocar_website">Como nos has conocido:
+        </p>
+        </label>
+        <input type="radio" name="boton" value="1">A través de un conocido<br>
+        <input type="radio" name="boton" value="2">Nuestras redes sociales<br>
+        <input type="radio" name="boton" value="3">Anuncios<br>
+        <input type="radio" name="boton" value="3">Otras<br>
+        </p>
+
+        <p>
+          <label for="mensaje" class="colocar_mensaje">Mensaje
+            <span class="obligatorio">*</span>
+        </p>
+        </label>
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+          placeholder="Deja aquí tu comentario..."></textarea>
+        </p>
+
+        <p class="aviso">
+          <span class="obligatorio"> * </span>los campos son obligatorios.
+        </p>
+        <div class="required checkbox">
+          <div class="checker" id="uniform-customer_privacy">
+            <input type="checkbox" value="0" required name="customer_privacy" autocomplete="off">
+          </div>
+          <label for="newsletter-input"><a href="/content/2-aviso-legal">Acepto politica de Privacidad</a></label>
+        </div>
+        <button type="submit" name="enviar_formulario" id="enviar">
+          <p>Enviar</p>
+        </button>
+
+
+      </form>
+      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+      <footer id="barraInferior">
+        <section id="menuInferior">
+          <a href="index.html">Home</a>
+          <a href="#">Política de cookies</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="tel:+34666666666">Teléfono</a>
+        </section>
+        <p id="cr">Copyright 2023 &copy;</p>
+      </footer>
+    </div>
+
+  </div>
 </body>
 </form>
