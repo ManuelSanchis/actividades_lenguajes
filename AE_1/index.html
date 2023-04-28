@@ -16,37 +16,53 @@
         </header>
 
         <nav class="borde">
+
+            <div class="dropdown">
+                <button class="dropbtn">Home</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a>Noticias</a>
+                    <a href="quienes_somos.html">Quienes somos</a>
+                    <a href="area_actuacion.html">Áreas de actuación</a>
+                    <a>Publicaciones</a>s
+                    <a href="formulario_contacto.html"> Contacto </a>
+                </div>
+            </div>
+
+
+            <!--
             <a>Home</a>
             <a>Noticias</a>
-            <a>Quienes somos</a>
+            <a href="quienes_somos.html">Quienes somos</a>
             <a>Publicaciones</a>
-            <a>Áreas de actuación</a>
-            <a>Localización</a>
-            <a>Contacto</a>
+            <a href="area_actuacion.html">Áreas de actuación</a>
+            <a href="formulario_contacto.html"> Contacto </a>
+            -->
+            
         </nav>
 
         <section class="articulo borde">
-        <header>
-            <h2>Primer artículo</h2>
-        </header>
-        <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum lorem libero, eu aliquam arcu efficitur nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dapibus gravida pulvinar. Nunc convallis ex ut odio molestie, in pellentesque massa imperdiet. Quisque efficitur quis risus eget finibus. Sed bibendum maximus ante vitae gravida. Cras pharetra laoreet viverra. Sed vulputate laoreet ullamcorper. Vestibulum laoreet, ante et fermentum tincidunt, turpis sapien consectetur purus, id porttitor neque odio id ligula. Curabitur tempor, purus sit amet rhoncus scelerisque, quam ligula elementum dui, ut vulputate arcu tellus et eros.</p>
-        </article>
-        <footer>
-            <a href="#">Seguir leyendo...</a>
-        </footer>
-        </section>
 
-        <section class="articulo borde">
-        <header>
-            <h2>Segundo artículo</h2>
-        </header>
         <article>
+            <header>
+                <h2>Primer artículo</h2>
+            </header>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum lorem libero, eu aliquam arcu efficitur nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dapibus gravida pulvinar. Nunc convallis ex ut odio molestie, in pellentesque massa imperdiet. Quisque efficitur quis risus eget finibus. Sed bibendum maximus ante vitae gravida. Cras pharetra laoreet viverra. Sed vulputate laoreet ullamcorper. Vestibulum laoreet, ante et fermentum tincidunt, turpis sapien consectetur purus, id porttitor neque odio id ligula. Curabitur tempor, purus sit amet rhoncus scelerisque, quam ligula elementum dui, ut vulputate arcu tellus et eros.</p>
-        </article>
-        <footer>
             <a href="#">Seguir leyendo...</a>
+        </article>
+    
+        <article>
+            <header>
+                <h2>Segundo artículo</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum lorem libero, eu aliquam arcu efficitur nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dapibus gravida pulvinar. Nunc convallis ex ut odio molestie, in pellentesque massa imperdiet. Quisque efficitur quis risus eget finibus. Sed bibendum maximus ante vitae gravida. Cras pharetra laoreet viverra. Sed vulputate laoreet ullamcorper. Vestibulum laoreet, ante et fermentum tincidunt, turpis sapien consectetur purus, id porttitor neque odio id ligula. Curabitur tempor, purus sit amet rhoncus scelerisque, quam ligula elementum dui, ut vulputate arcu tellus et eros.</p>
+            <a href="#">Seguir leyendo...</a>
+        </article>
+
+        <footer>
+            <a href="#">Ver todos los artículos</a>
         </footer>
+
         </section>
 
         <aside id="barraLateral">
@@ -62,7 +78,7 @@
 
         <footer id="barraInferior">
             <section id="menuInferior">
-                <a href="#titulo">Ir al inicio</a>
+                <a href="#Título">Ir al inicio</a>
                 <a href="#">Política de cookies</a>
                 <a href="#">Instagram</a>
                 <a href="#">Twitter</a>
@@ -71,6 +87,31 @@
         </footer>
 
     </div>
+
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+    </script>
+
 </body>
 
 </html>
