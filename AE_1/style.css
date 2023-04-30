@@ -81,22 +81,23 @@ a:hover {
     text-align: center;
 }
 
-#posicion {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .borde {
     border: 2px solid rgb(218, 172, 100);
     border-radius: 2px;
 }
 
-nav {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10px;
-    padding: 2px;
+    padding: 4px;
+}
+
+#posicion {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*
@@ -122,10 +123,10 @@ nav {
     margin-bottom: 10px;
 }
 
-    .articulo p {
+.articulo p {
         margin-top: 0px;
         margin-bottom: 10px;
-    }
+}
     
     #barraLateral {
         flex: 120px;
@@ -168,6 +169,12 @@ nav {
         justify-content:space-between;
         padding: 4px;
     }
+
+    #cr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
     #QS{
         display: flex;
         justify-content: center;
@@ -186,12 +193,6 @@ nav {
       width:25%;
     }
      
-    #cr {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-  
 
     #divLogo {
         /*width: 100%;*/
