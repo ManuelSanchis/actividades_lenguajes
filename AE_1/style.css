@@ -79,6 +79,14 @@ html {
         padding: 4px;
     }
 
+    .menuresponsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+
     #posicion {
         display: flex;
         flex-wrap: wrap;
@@ -184,12 +192,7 @@ html {
     }
     */
     
-    @media (min-width: 1301px) {
-        body {
-            width: 1300px;
-        }
-    }
-
+  
 
     #QS{
         display: flex;
@@ -246,3 +249,11 @@ html {
   .dropdown-content a:hover {background-color: #ddd;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: grey;}
+
+  /*Ajustes tamaños*/
+
+  @media (min-width: 1301px) {
+    body {
+        width: 1300px;
+    }
+}
