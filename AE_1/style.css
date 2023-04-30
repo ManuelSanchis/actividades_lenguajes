@@ -214,7 +214,9 @@ a:hover {
 }
 
 
-* Boton desplegable hacia abajo menu */ .dropbtn {
+/* Boton desplegable hacia abajo menu */
+
+.dropbtn {
     background-color: grey;
     color: rgb(218, 172, 100);
     padding: 16px;
@@ -259,6 +261,12 @@ a:hover {
     background-color: grey;
 }
 
+.borde-boton {
+    border: 2px solid rgb(218, 172, 100);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
 /* Adaptación de ancho fijo para resoluciones de más de 1300px de ancho */
 @media (min-width: 1301px) {
     body {
@@ -280,7 +288,7 @@ a:hover {
     .menuresponsive {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         margin-bottom: 10px;
         padding: 4px;
     }
@@ -308,7 +316,7 @@ a:hover {
     .menuresponsive {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         margin-bottom: 10px;
         padding: 4px;
     }
@@ -344,7 +352,7 @@ a:hover {
     .menuresponsive {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         margin-bottom: 10px;
         padding: 4px;
     }
@@ -384,7 +392,7 @@ a:hover {
     .menuresponsive {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         margin-bottom: 10px;
         padding: 4px;
     }
