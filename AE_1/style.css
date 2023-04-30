@@ -175,23 +175,7 @@ a:hover {
         margin-bottom: 0px;
     }
 
-    #QS{
-        display: flex;
-        justify-content: center;
-    }
-    
-    #premapa {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #mapa{
-      margin: auto;
-      padding: 200; 
-      display: flex;
-      height:25%;
-      width:25%;
-    }
+   
      
 
     #divLogo {
@@ -229,6 +213,25 @@ a:hover {
         }
     }
 
+
+    #QS{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #premapa {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #mapa{
+      margin: auto;
+      padding: 200; 
+      display: flex;
+      height:25%;
+      width:25%;
+    }
+    
 /* Boton desplegable hacia abajo menu */
 .dropbtn {
     background-color:grey;
