@@ -8,67 +8,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
-</head>
-
 
 <body>
-  <div class="contact_form">
+
+  <div class="contenedor">
+
+    <nav class="menu borde">
+      <a href="index.html">Home</a>
+      <a>Noticias</a>
+      <a href="quienes_somos.html">Quienes somos</a>
+      <a href="area_actuacion.html">Áreas de actuación</a>
+      <a>Publicaciones</a>
+      <a href="formulario_contacto.html"> Contacto </a>
+    </nav>
+
+    <nav class="menuresponsive borde">
+      <div class="dropdown">
+        <button class="dropbtn">Menú</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a>Noticias</a>
+          <a href="quienes_somos.html">Quienes somos</a>
+          <a href="area_actuacion.html">Áreas de actuación</a>
+          <a>Publicaciones</a>
+          <a href="formulario_contacto.html"> Contacto </a>
+        </div>
+      </div>
+    </nav>
 
 
-    <div id="contenedor">
-      <h1>Formulario de contacto</h1>
+    <h2>Formulario de contacto</h2>
 
+    <form action="mailto:adrian.martinezm97@gmial.com" method="POST" enctype="text/plain">
+      <h3>Selecciona un servicio:</h3>
+      <input type="checkbox" id="tutorizacion" name="servicio" value="tutorizacion">
+      <label for="tutorizacion">Tutorización dentro del juego</label><br>
+      <input type="checkbox" id="mejora_habilidades" name="servicio" value="mejora_habilidades">
+      <label for="mejora_habilidades">Mejora de habilidades en juego online</label><br>
+      <input type="checkbox" id="acompanamiento" name="servicio" value="acompanamiento">
+      <label for="acompanamiento">Acompañamiento en el modo campaña para todos los niveles</label><br>
+      <input type="checkbox" id="otros" name="servicio" value="otros">
+      <label for="otros">Otros:</label>
+      <input type="text" id="otros_texto" name="otros_texto" placeholder="Escribe aquí"><br>
+      <p>
+      <h3>Indique su nivel de experiencia:</h3>
+      <input type="range" name="rango" min="0" max="" list="lista-rango">
+      <datalist id="lista-rango">
+        <option value="1" label="Principiante">
+        <option value="2" label="Regular">
+        <option value="3" label="Bueno">
+        <option value="4" label="Leyenda">
+      </datalist>
 
-      <form action="mailto:adrian.martinezm97@gmial.com" method="POST" enctype="text/plain">
-        <h3>Selecciona un servicio:</h3>
-        <input type="checkbox" id="tutorizacion" name="servicio" value="tutorizacion">
-        <label for="tutorizacion">Tutorización dentro del juego</label><br>
-        <input type="checkbox" id="mejora_habilidades" name="servicio" value="mejora_habilidades">
-        <label for="mejora_habilidades">Mejora de habilidades en juego online</label><br>
-        <input type="checkbox" id="acompanamiento" name="servicio" value="acompanamiento">
-        <label for="acompanamiento">Acompañamiento en el modo campaña para todos los niveles</label><br>
-        <input type="checkbox" id="otros" name="servicio" value="otros">
-        <label for="otros">Otros:</label>
-        <input type="text" id="otros_texto" name="otros_texto" placeholder="Escribe aquí"><br>
-        <p>
-        <h3>Indique su nivel de experiencia:</h3>
-        <input type="range" name="rango" min="0" max="" list="lista-rango">
-        <datalist id="lista-rango">
-          <option value="1" label="Principiante">
-          <option value="2" label="Regular">
-          <option value="3" label="Bueno">
-          <option value="4" label="Leyenda">
-        </datalist>
+      <h3>Indique su color favorito:</h3>
+      <input type="color" name="colorElegido">
 
-        <h3>Indique su color favorito:</h3>
-        <input type="color" name="colorElegido">
+      <h3>Indícanos tus datos</h3>
+      <label for="nombre" class="colocar_nombre">Nombre
+        <span class="obligatorio">*</span>
+      </label>
+      <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+      </p>
 
-        <h3>Indícanos tus datos</h3>
-        <label for="nombre" class="colocar_nombre">Nombre
-          <span class="obligatorio">*</span>
-        </label>
-        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-        </p>
+      <br>
 
-    <br>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
+      <br>
 
-    <br>
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
 
-    <label for="asunto">Asunto:</label>
-    <input type="text" id="asunto" name="asunto" required>
+      <br>
 
-    <br>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <br>
 
-    <br>
+      <input type="submit" value="Enviar">
+    </form>
 
-    <input type="submit" value="Enviar">
-</form>
+  </div>
+</body>
