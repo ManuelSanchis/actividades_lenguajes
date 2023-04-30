@@ -267,6 +267,17 @@ a:hover {
     box-sizing: border-box;
 }
 
+.servicio {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .servicio img {
+    max-width: 100%;
+    height: auto;
+  }
+
 /* Adaptación de ancho fijo para resoluciones de más de 1300px de ancho */
 @media (min-width: 1301px) {
     body {
