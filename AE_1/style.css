@@ -367,6 +367,10 @@ a:hover {
     nav.menu {
         display: none;
     }
+
+    #barraInferior {
+        display:none;
+    }
 }
 
 /* Adaptación optimizada para verse en una tablet en posición horizontal */
@@ -442,6 +446,10 @@ a:hover {
 
     .menu {
         display: none;
+    }
+
+    #barraInferior {
+        display:none;
     }
 }
 
