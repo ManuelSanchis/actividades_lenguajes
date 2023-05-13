@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Exocet Hard';
-    src: url(./fonts/films.EXH_____.ttf);
+    src: url(./fonts/films.EXH_____.ttf); /*Añade las fuente ubicada en el directorio "fonts"*/
 }
 
 @font-face {
     font-family: 'Exocet Light';
-    src: url(./fonts/films.EXL_____.ttf);
+    src: url(./fonts/films.EXL_____.ttf); /*Añade las fuente ubicada en el directorio "fonts"*/
 }
 
 /*
