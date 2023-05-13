@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libros>
+        <libro Id="L0001" tipo_clase="novela" num_pag"50">
+            <titulo>El nombre del viento</titulo>
+            <capitulo num_pag="20">
+                <titulo>Capítulo 1: Una llama en la oscuridad</titulo>
+                <contenido enlace="https://el-nombre-del-viento/capitulo-1" />
+            </capitulo>
+            <capitulo num_pag="25">
+                <titulo>Capítulo 2: Una taberna y una chica</titulo>
+                <contenido enlace="https://el-nombre-del-viento/capitulo-2" />
+            </capitulo>
+            <indice/>
+            <sinopsis>En una posada en el camino hacia el reino de los cuervos, un joven músico
+                busca a un hombre legendario llamado Kvothe.</sinopsis>
+        </libro>
+        <libro Id="L0002" tipo_clase="novela" num_pag"215">
+            <titulo>Memorias de Idhun</titulo>
+            <capitulo num_pag="15">
+                <titulo>Capítulo 1: El Amanecer</titulo>
+                <contenido enlace="https://memorias-de-idhun/capitulo-1" />
+            </capitulo>
+            <capitulo num_pag="37">
+                <titulo>Capítulo 2: Que me está pasando</titulo>
+                <contenido enlace="https://memorias-de-idhun/capitulo-2" />
+            </capitulo>
+            <indice />
+            <sinopsis>El día en que se produjo en Idhún la conjunción astral de los tres soles y las
+                tres lunas, Ashran el Nigromante se hizo con el poder en aquel planeta.</sinopsis>
+        </libro>
+        <libro Id="L0003" tipo_clase="infantil" num_pag"45">
+            <titulo>Dora la exploradora</titulo>
+            <capitulo num_pag="4">
+                <titulo>Capítulo 1: Hola Dora</titulo>
+                <contenido enlace="https://dora-la-exploradora/capitulo-1" />
+            </capitulo>
+            <capitulo num_pag="6">
+                <titulo>Capítulo 2: Dora conoce a Mono</titulo>
+                <contenido enlace="https://dora-la-exploradora/capitulo-2" />
+            </capitulo>
+            <capitulo num_pag="9">
+                <titulo>Capítulo 3: Dora y el patin</titulo>
+                <contenido enlace="https://dora-la-exploradora/capitulo-3" />
+            </capitulo>
+            <indice />
+            <sinopsis>Las aventuras de Dora y mono</sinopsis>
+        </libro>
+        <libro Id="L0004" tipo_clase="didactico" num_pag"230">
+            <titulo>A 22 pasos del exito</titulo>
+            <capitulo num_pag="25">
+                <titulo>Introducccion</titulo>
+                <contenido enlace="https://a-22-pasos-del-exito/introduccion" />
+            </capitulo>
+            <capitulo num_pag="35">
+                <titulo>Capítulo 1: Perfil del exito</titulo>
+                <contenido enlace="https://a-22-pasos-del-exito/capitulo-1" />
+            </capitulo>
+            <indice />
+            <sinopsis>A 22 pasos del exito enumera y profundiza en las 22 claves necesarias para
+                llegar a triunfar</sinopsis>
+        </libro>
+    </libros>
+    <revistas>
+        <revista id="R0001" tipo_clase="informática" num_pag="25">
+            <titulo>League Of Legends fans</titulo>
+            <numero>1</numero>
+            <indice_de_contenido>Contenido exclusivo del nuevo parche de la grieta del invocador</indice_de_contenido>
+            <secciones>
+                <seccion num_pag="2">
+                    <contenido enlace="https://contenido-de-la-seccion-1" />
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido enlace="https://contenido-de-la-seccion-2" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0002" tipo_clase="corazon" num_pag="48">
+            <titulo>Salvame Deluxe</titulo>
+            <numero>3</numero>
+            <indice_de_contenido>La princesa Leonor enamorada del futbolista del Barcelona Gavi</indice_de_contenido>
+            <secciones>
+                <seccion num_pag="3">
+                    <contenido enlace="https://contenido-de-la-seccion-1" />
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido enlace="https://contenido-de-la-seccion-2" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0003" tipo_clase="coches" num_pag="15">
+            <titulo>MotorGear</titulo>
+            <numero>15</numero>
+            <indice_de_contenido>Probamos el nuevo BMW electrico</indice_de_contenido>
+            <secciones>
+                <seccion num_pag="1">
+                    <contenido enlace="https://contenido-de-la-seccion-1" />
+                </seccion>
+                <seccion num_pag="2">
+                    <contenido enlace="https://contenido-de-la-seccion-2" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0004" tipo_clase="investigacion" num_pag="35">
+            <titulo>Cientificea</titulo>
+            <numero>11</numero>
+            <indice_de_contenido>Descubren un nuevo componente para la generacion de energia nuclear
+                limpia</indice_de_contenido>
+            <secciones>
+                <seccion num_pag="4">
+                    <contenido enlace="https://contenido-de-la-seccion-1" />
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido enlace="https://contenido-de-la-seccion-2" />
+                </seccion>
+            </secciones>
+        </revista>
+        <revista id="R0005" tipo_clase="otras" num_pag="42">
+            <titulo>Fotografea</titulo>
+            <numero>4</numero>
+            <indice_de_contenido>Las mejores fotografias del mes de marzo</indice_de_contenido>
+            <secciones>
+                <seccion num_pag="5">
+                    <contenido enlace="https://contenido-de-la-seccion-1" />
+                </seccion>
+                <seccion num_pag="9">
+                    <contenido enlace="https://contenido-de-la-seccion-2" />
+                </seccion>
+                <seccion num_pag="7">
+                    <contenido enlace="https://contenido-de-la-seccion-3" />
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+    <periodicos>
+        <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="13/05/2023">
+        <indice/>
+        <secciones>
+            <seccion tipo="economia">
+                <articulo autor="Juan Perez"/>
+                <articulo autor="Maria Gomez"/>
+            </seccion>
+            <seccion tipo="politica">
+                <articulo autor="Luisa Fernandez"/>
+            </seccion>
+            <seccion tipo="deportes">
+                <articulo autor="Carlos Rodriguez"/>
+                <articulo autor="Ana Sánchez"/>
+            </seccion>
+        </secciones>
+        <contenido enlace="https://periodico-nacional" />
+        </periodico>
+           <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="15/05/2020">
+        <indice/>
+        <secciones>
+            <seccion tipo="economy">
+                <articulo autor="Mathew Jones"/>
+                <articulo autor="Cosmin Variu"/>
+            </seccion>
+            <seccion tipo="policy">
+                <articulo autor="Laura Calviello"/>
+            </seccion>
+            <seccion tipo="sports">
+                <articulo autor="Tom Brady"/>
+                <articulo autor="Henry Damons"/>
+            </seccion>
+        </secciones>
+        <contenido enlace="https://periodico-nacional" />
+        </periodico>
+    </periodicos>
+</biblioteca>
