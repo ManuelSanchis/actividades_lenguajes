@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libros">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="libro" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="capitulo" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="titulo" type="xs:string"/>
+                                                    <xs:element name="contenido" type="xs:anyURI"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="num_pag" type="xs:positiveInteger" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="indice" type="xs:anyType" minOccurs="0"/>
+                                        <xs:element name="sinopsis" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Id" type="xs:string" use="required"/>
+                                    <xs:attribute name="tipo_clase" type="xs:string" use="required"/>
+                                    <xs:attribute name="num_pag" type="xs:positiveInteger" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="revistas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="revista" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="numero" type="xs:positiveInteger"/>
+                                        <xs:element name="indice_de_contenido" type="xs:string"/>
+                                        <xs:element name="secciones">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="seccion" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="contenido" type="xs:anyURI"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="num_pag" type="xs:positiveInteger" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="tipo_clase" type="xs:string" use="required"/>
+                                    <xs:attribute name="num_pag" type="xs:positiveInteger" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="periodicos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="periodico" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="indice" minOccurs="0"/>
+                                        <xs:element name="secciones">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="seccion" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="articulo" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="autor" type="xs:string" use="required"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="contenido">
+                                            <xs:complexType>
+                                                <xs:attribute name="enlace" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="tipo_clase" type="xs:string" use="required"/>
+                                    <xs:attribute name="fecha_publicacion" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
