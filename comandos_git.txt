@@ -32,3 +32,5 @@ Hacer commit
 Subir el commit a tu rama develop
 ---------------------------------
 git push origin nombre_rama
+
+¡Gracias!
